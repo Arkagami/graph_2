@@ -165,7 +165,7 @@ namespace std
 			sposob1(x1, y1, x2, y2);
 		}
 		t1 = clock() - t;
-		vc << "sposob 1= " << t1;
+		vc << "\nd(Time) - " << t1 / 1000 << "." << t1 % 1000 << " seconds";
 		t = clock();
 		for (int i = 0; i < RAZ; i++)
 		{
@@ -177,7 +177,7 @@ namespace std
 			sposob2(x1, y1, x2, y2);
 		}
 		t2 = clock() - t;
-		vc << "\nsposob 2= " << t2;
+		vc << "\nd(Time) - " << t2 / 1000 << "." << t2 % 1000 << " seconds";
 		TFlush();
 		GFlush();
 		vgetchar();
